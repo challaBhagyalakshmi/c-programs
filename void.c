@@ -5,6 +5,11 @@ void printHello()
     printf("Hello world\n");
 }
 
+void withoutargu(void)
+{
+    printf("This is accepting no aruguements\n");
+}
+
 int main()
 {
     void* ptr;
@@ -12,4 +17,5 @@ int main()
     ptr=&num;
     printHello();
     printf("This is void variable :- %d\n",*(int *)ptr);
+    withoutargu();
 }
